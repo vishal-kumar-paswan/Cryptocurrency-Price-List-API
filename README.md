@@ -2,7 +2,7 @@
 
 Cryptocurrency price list API is using web scrapping to fetch data of top 25 cryptocurrencies from https://finance.yahoo.com/.
 
-## Make a GET Request at the following URL:
+## Make a GET Request at the following URL: https://cryptocurrency-price-list-api.vercel.app/
 
 ## Response body
 
