@@ -19,6 +19,8 @@ exports.fetchCryptoPriceList = async (req, res) => {
         $("tr.simpTblRow").each((index, crypto) => {
             let cryptocurrencyDetails = {};
 
+            cryptocurrencyDetails.imageUrl = $(crypto).find("img.W\\(20px\\).H\\(20px\\).Mend\\(5px\\)").attr('src');
+
             // cryptocurrency code
             cryptocurrencyDetails.code = $(crypto).find("a.Fw\\(600\\).C\\(\\$linkColor\\)").text();
 
