@@ -28,8 +28,8 @@ exports.fetchCryptoPriceList = async (req, res) => {
             cryptocurrencyDetails.name = $(crypto).find("td.Va\\(m\\).Ta\\(start\\).Px\\(10px\\).Fz\\(s\\)").text();
 
             // Iterating to first, second and third element of the following selector to fetch the price, change and change percentage
-            $(crypto).find("td.Va\\(m\\).Ta\\(end\\).Pstart\\(20px\\).Fw\\(600\\).Fz\\(s\\)").each((i, price) => {
-                switch (i) {
+            $(crypto).find("td.Va\\(m\\).Ta\\(end\\).Pstart\\(20px\\).Fw\\(600\\).Fz\\(s\\)").each((index, price) => {
+                switch (index) {
                     case 0:
                         cryptocurrencyDetails.price = $(price).text();
                         break;
